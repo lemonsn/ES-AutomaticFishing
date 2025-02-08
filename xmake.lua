@@ -14,7 +14,9 @@ add_requires(
     "boost 1.85.0",
     "glm 1.0.1",
     "concurrentqueue 1.0.4",
-    "magic_enum 0.9.7"
+    "magic_enum 0.9.7",
+    "libhat 2024.9.22",
+    "polyhook2 2024.8.1"
 )
 
 local fmt_version = "fmt >=10.0.0 <11.0.0";
@@ -30,7 +32,7 @@ if is_plat("windows") and not has_config("vs_runtime") then
     set_runtimes("MD")
 end
 
-target("my-plugin")
+target("AutomaticFishing")
     add_defines(
         "NOMINMAX", 
         "UNICODE", 
@@ -48,7 +50,9 @@ target("my-plugin")
         "glm",
         "concurrentqueue",
         "endstone",
-        "magic_enum"
+        "magic_enum",
+        "libhat",
+        "polyhook2"
     )
     set_kind("shared")
     set_languages("cxx20")
