@@ -28,7 +28,7 @@ public:
 
 private:
     PluginDescriptionBuilderImpl mBuilder;
-    endstone::PluginDescription  mDescription = mBuilder.build("automatic_fishing", "1.0.0");
+    endstone::PluginDescription  mDescription = mBuilder.build("automatic_fishing", "1.0.1");
     bool (*mServerHookedOrigin)(void* self);
     std::optional<PLH::x64Detour> mHook;
 };

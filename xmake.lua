@@ -6,7 +6,7 @@ add_repositories(
 )
 
 add_requires(
-    "endstone 0.5.7.1",
+    "endstone 0.6.0",
     "expected-lite 0.8.0",
     "entt 3.14.0",
     "microsoft-gsl 4.0.0",
