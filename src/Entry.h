@@ -1,6 +1,5 @@
 #pragma once
 #include <endstone/plugin/plugin.h>
-#include <polyhook2/Detour/x64Detour.hpp>
 
 namespace AutomaticFishing {
 
@@ -22,14 +21,10 @@ public:
 
     void onDisable() override;
 
-    endstone::PluginDescription const& getDescription() const override;
-
-    static bool serverHookedDetour(void* self);
+    endstone::PluginDescription const& getDescription() const override { return mDescription; }
 
 private:
     PluginDescriptionBuilderImpl mBuilder;
-    endstone::PluginDescription  mDescription = mBuilder.build("automatic_fishing", "1.0.1");
-    bool (*mServerHookedOrigin)(void* self);
-    std::optional<PLH::x64Detour> mHook;
+    endstone::PluginDescription  mDescription = mBuilder.build("automatic_fishing", "1.0.2");
 };
 } // namespace AutomaticFishing
