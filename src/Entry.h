@@ -17,10 +17,6 @@ class Entry : public endstone::Plugin {
 public:
     static Entry* getInstance();
 
-    void onEnable() override;
-
-    void onDisable() override;
-
     endstone::PluginDescription const& getDescription() const override { return mDescription; }
 
 private:

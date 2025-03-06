@@ -1,7 +1,7 @@
 #include "Entry.h"
 #include <glacie/memory/Hook.h>
 
-GLACIE_INSTANCE_HOOK(
+GLACIE_AUTO_INSTANCE_HOOK(
     ServerHookedHook,
     "40 53 48 81 EC ?? ?? ?? ?? 48 8B 05 ?? ?? ?? ?? 48 33 C4 48 89 44 24 ?? 48 8B D9 48 8B 89 ?? ?? ?? ?? 48 8B 01 48 "
     "8B 80",
@@ -43,10 +43,6 @@ Entry* Entry::getInstance() {
     if (!instance) instance = new Entry();
     return instance;
 }
-
-void Entry::onEnable() { ServerHookedHook::hook(); }
-
-void Entry::onDisable() { ServerHookedHook::unhook(); }
 
 } // namespace AutomaticFishing
 
