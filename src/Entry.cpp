@@ -14,7 +14,7 @@ GLACIE_AUTO_INSTANCE_HOOK(
 
         // Player::getSelectedItem
         static auto getSelectedItemFunc =
-            SIGNATURE_CALL("48 8B 91 C8 05 00 00 80 BA B0 00 00 00 00 75 18 48 8B 8A B8 00 00 00 8B 52 10 48 8B 01 48 8B 40 38 48 FF 25 30 37 C6 01", void*, void*);
+            SIGNATURE_CALL("48 8B 91 C0 05 00 00 80 BA B0 00 00 00 00 75 18 48 8B 8A B8 00 00 00 8B 52 10 48 8B 01 48 8B 40 38", void*, void*);
 
         // ItemStackBase::getItem
         static auto getItemFunc = SIGNATURE_CALL("48 8B 41 08 48 85 C0 74 04 48 8B 00 C3", void*, void*);
