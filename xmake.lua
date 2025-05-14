@@ -6,14 +6,7 @@ add_repositories(
 )
 
 add_requires("glaciehook 1.0.1", { configs = { static = true } })
-
-add_requires(
-    "endstone 0.7.1",
-    "fmt >=10.0.0 <11.0.0",
-    "expected-lite 0.8.0",
-    "libhat 2024.9.22",
-    "detours v4.0.1-xmake.1"
-)
+add_requires("endstone 0.8.0")
 
 if not has_config("vs_runtime") then
     set_runtimes("MD")
