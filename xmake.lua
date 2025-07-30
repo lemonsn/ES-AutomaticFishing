@@ -5,8 +5,8 @@ add_repositories(
     "groupmountain-repo https://github.com/GroupMountain/xmake-repo.git"
 )
 
-add_requires("glaciehook 1.0.1", { configs = { static = true } })
-add_requires("endstone 0.8.0")
+add_requires("glaciehook 1.0.2", { configs = { static = true } })
+add_requires("endstone 0.9.4")
 
 if not has_config("vs_runtime") then
     set_runtimes("MD")
