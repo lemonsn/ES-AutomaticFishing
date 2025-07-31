@@ -2,7 +2,7 @@ add_rules("mode.debug", "mode.release")
 
 add_repositories(
     "liteldev-repo https://github.com/LiteLDev/xmake-repo.git",
-    "groupmountain-repo https://github.com/GroupMountain/xmake-repo.git"
+    "groupmountain-repo https://github.com/lemonsn/xmake-repo.git"
 )
 
 add_requires("glaciehook 1.0.2", { configs = { static = true } })
