@@ -21,6 +21,6 @@ public:
 
 private:
     PluginDescriptionBuilderImpl mBuilder;
-    endstone::PluginDescription  mDescription = mBuilder.build("automatic_fishing", "1.0.9");
+    endstone::PluginDescription  mDescription = mBuilder.build("automatic_fishing", "1.1.0");
 };
 } // namespace AutomaticFishing
