@@ -6,7 +6,7 @@ add_repositories(
 )
 
 add_requires("glaciehook 1.0.2", { configs = { static = true } })
-add_requires("endstone 0.10.6")
+add_requires("endstone 0.10.8")
 
 if not has_config("vs_runtime") then
     set_runtimes("MD")
